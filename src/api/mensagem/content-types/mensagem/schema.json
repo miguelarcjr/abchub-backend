@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mensagens",
+  "info": {
+    "singularName": "mensagem",
+    "pluralName": "mensagens",
+    "displayName": "Mensagem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "conteudo": {
+      "type": "text"
+    },
+    "data_envio": {
+      "type": "datetime"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "mensagens"
+    },
+    "comentarios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comentario.comentario",
+      "mappedBy": "mensagem"
+    }
+  }
+}
