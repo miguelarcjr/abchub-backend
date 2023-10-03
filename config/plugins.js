@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
         },
         "contentTypes": {
           "mensagem": "*",
-          "comentario":["*"]
+          "comentario":"*"
         },
         "events":[
           {
