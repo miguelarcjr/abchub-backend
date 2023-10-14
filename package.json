@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "ai": "flowise start"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.9",
@@ -28,5 +29,8 @@
     "node": ">=16.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "flowise": "^1.3.8"
+  }
 }
