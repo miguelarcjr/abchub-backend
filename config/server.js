@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: 'http://31.220.94.131:1337',
+  url: 'https://api.abchub.com.br',
   app: {
     keys: env.array('APP_KEYS'),
   },
