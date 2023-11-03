@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
       "enabled": true,
       "config": {
         "IOServerOptions" :{
-          "cors": { "origin": ["http://localhost:4200"], "methods": ["GET"] },
+          "cors": { "origin": ["http://localhost:4200", "https://abchub.com.br"], "methods": ["GET"] },
         },
         "contentTypes": {
           "mensagem": "*",
